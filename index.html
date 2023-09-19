@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detection webapp</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="fake.png">
   </head>
+  <script src="script.js"></script>
   <body>
     <div id="loader">
       <div id="wrapperload">
@@ -25,18 +26,35 @@
 
     <nav class="nav">
       <div class="div">
-        <h1 style="font-size: 2vw">Fake Social Media Detection</h1>
+        <h1 style="font-size: 2vw">Fake Social Media Profile Detection</h1>
       </div>
     </nav>
     <div class="container0">
       <div class="content">
-        <h2 style="font-size: 3.5vw">Detection Fake Social</h2>
+        <h2 style="font-size: 3.5vw">DETECTIFY</h2>
         <p style="font-size: 1.5vw">
-          Creating a website for fake social media detection. Utilizing AI and ML
+          Creating a platform for fake social media profile detection and reportiong. Utilizing AI and ML
           algorithms and user-generated reports, our platform scans profiles and
           content for anomalies. Users receive instant authenticity scores,
           helping them navigate social media safely and confidently.
         </p>
+        <div class="social">
+
+          <div id="theButton" >
+            <img src="facebook.png" alt="" id="bt1">
+            <input type="text" name="popup" id="popup1" placeholder="Enter username/link" class="invisible visible">
+          </div>
+
+          <div id="theButton">
+            <img src="instagram.png" alt="" id="bt2">
+            <input type="text" name="popup" id="popup2" placeholder="Enter username/link" class="invisible visible">
+          </div>
+
+          <div id="theButton">
+              <img src="twitter.png" alt="" id="bt3">
+              <input type="text" name="popup" id="popup3" placeholder="Enter username/link" class="invisible visible">
+          </div>
+        </div>
       </div>
       <!-- <div class="image">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -51,5 +69,26 @@
         </lottie-player>
       </div> -->
     </div>
+    <script>
+      let btn1 = document.getElementById("bt1");
+      btn1.onclick = (event) =>{
+          let popup = document.getElementById('popup1');
+          popup.classList.toggle('invisible');
+      }
+
+
+      let btn2 = document.getElementById("bt2");
+      btn2.onclick = (event) =>{
+          let popup = document.getElementById('popup2');
+          popup.classList.toggle('invisible');
+      }
+
+
+      let btn3 = document.getElementById("bt3");
+      btn3.onclick = (event) =>{
+          let popup = document.getElementById('popup3');
+          popup.classList.toggle('invisible');
+      }
+    </script>
   </body>
 </html>

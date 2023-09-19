@@ -95,14 +95,14 @@ body{
   /* border: 2px solid blue; */
   margin-top: 15px;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color: #67cbf0;
 }
 
 .container0 .content{
   width: 100%;
-  gap: 3px;
+  gap: 50px;
   /* background-image: url("/back.png"); */
   background-size: 60vw 95vh;
   background-repeat: no-repeat;
@@ -130,6 +130,56 @@ body{
   margin-left: 10%;
   font-family: 'Roboto', sans-serif;
 }
+
+.container0 .content .social{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  /* background-color: #000000; */
+}
+
+.container0 .content .social img{
+  height: 10vh;
+  /* border: 2px solid rgb(126, 126, 126); */
+  /* border-radius: 50pc; */
+}
+/* 
+.container0 .content .social img:hover{
+  border: 2px dashed burlywood;
+} */
+
+form {
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
+.visible{
+  background-color: #ffffff;
+  padding: 5px 5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#theButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 15px;
+}
+
 @media only screen and (max-width: 768px){
   html{
       height: 100%;
