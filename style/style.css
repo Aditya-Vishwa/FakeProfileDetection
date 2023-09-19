@@ -101,9 +101,9 @@ body{
 }
 
 .container0 .content{
-  width: 60%;
+  width: 100%;
   gap: 3px;
-  background-image: url("https://i0.wp.com/thecyberexpress.com/wp-content/uploads/2022/09/shutterstock_1930752575.jpg?fit=1000%2C483&ssl=1");
+  /* background-image: url("/back.png"); */
   background-size: 60vw 95vh;
   background-repeat: no-repeat;
   display: flex;
@@ -130,14 +130,6 @@ body{
   margin-left: 10%;
   font-family: 'Roboto', sans-serif;
 }
-.button{
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
 @media only screen and (max-width: 768px){
   html{
       height: 100%;
